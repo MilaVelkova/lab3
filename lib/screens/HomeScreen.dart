@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => RandomJokeScreen(), // Замени го со соодветниот екран
+                  builder: (context) => RandomJokeScreen(),
                 ),
               );
             },
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           IconButton(
-            icon: Icon(Icons.favorite, color: Colors.red), // Црвено срце
+            icon: Icon(Icons.favorite, color: Colors.red),
             onPressed: () {
               Navigator.push(
                 context,

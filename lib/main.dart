@@ -25,7 +25,6 @@ Future<void> getToken() async {
   String? token = await messaging.getToken();
   print('FCM Token: $token');
 
-  // Listen to foreground messages
   FirebaseMessaging.onMessage.listen((RemoteMessage message) {
     print('Foreground message received: ${message.notification?.title}');
     }
